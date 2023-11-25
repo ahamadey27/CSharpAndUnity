@@ -1,15 +1,14 @@
 ﻿using System;
 
-namespace myConsoleProject.cs
+
+
+class Program
 {
-    class Program
+    static void Main()
     {
-        static void Main()
-        {
-            Console.WriteLine("What is your name?");
-            String name = Console.ReadLine();
-            Console.WriteLine("Hello, " + name + "!");
-            Console.Read();
-        }
+        Console.WriteLine("Welcome to Acne Accounting Systems \nRemember, we're \"accounting\" on you!");
+        Console.ReadLine();
+
     }
 }
+
