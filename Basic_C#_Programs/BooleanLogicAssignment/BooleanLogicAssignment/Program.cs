@@ -25,7 +25,7 @@ namespace BooleanLogicAssignment
             int ticketsInt = Convert.ToInt32(ticketsString);
             bool insuraceApproval = (ageInt > 15 && duiBool != true && ticketsInt < 3);
             Console.WriteLine("Are you qualified?");
-            Thread.Sleep(3000);
+            Thread.Sleep(3000); //this adds three seconds but must add the "using System.Threading;" 
             Console.WriteLine(insuraceApproval); 
 
             Console.ReadLine(); 
