@@ -44,6 +44,57 @@ namespace MathAndComparisonOperators
             //Console.WriteLine(isWarm.ToString());
             //Console.ReadLine();
 
+            //Console Application Challange 
+            // ---- ------ ----- ----- ----- // 
+            //// 1. Takes an input from the user, multiplies it by 50, then prints the result to the console.
+            ////(Note: make sure your code can take inputs larger than 10,000,000).
+            ///
+            //Console.WriteLine("Please enter an a number");
+            //string userUnput = Console.ReadLine();
+            //int userInt = Convert.ToInt32(userUnput);
+            //Console.WriteLine(userInt * 50);
+            //Console.ReadLine();
+
+            //// 2.Takes an input from the user, multiplies it by 50, then prints the result to the console.
+            ////
+            //Console.WriteLine("Please enter an a number");
+            //string userUnput = Console.ReadLine();
+            //int userInt = Convert.ToInt32(userUnput);
+            //Console.WriteLine(userInt + 25);
+            //Console.ReadLine();
+
+            //// 3.Takes an input from the user, divides it by 12.5, then prints the result to the console
+            ////
+            //Console.WriteLine("Please enter an a number");
+            //string userUnput = Console.ReadLine();
+            //double userInt = Convert.ToInt32(userUnput);
+            //Console.WriteLine(userInt / 12.5);
+            //Console.ReadLine();
+
+            //// 4.Takes an input from the user, checks if it is greater than 50, then prints the true/false result to the console.
+            ////
+            //Console.WriteLine("Please enter an a number");
+            //string userUnput = Console.ReadLine();
+            //int userInt = Convert.ToInt32(userUnput);
+            //bool trueOrFalse = userInt > 50; 
+            //Console.WriteLine(trueOrFalse.ToString());
+            //Console.ReadLine();
+
+
+            // 5.Takes an input from the user, divides it by 7, then prints the remainder to the console (tip: think % operator).
+            //
+            Console.WriteLine("Please enter an a number");
+            string userUnput = Console.ReadLine();
+            int userInt = Convert.ToInt32(userUnput);
+            Console.WriteLine(userInt % 7);
+            Console.ReadLine();
+
+
+
+
+
+
+
 
         }
     }
