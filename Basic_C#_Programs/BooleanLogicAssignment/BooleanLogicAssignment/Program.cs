@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace BooleanLogicAssignment
@@ -23,6 +24,8 @@ namespace BooleanLogicAssignment
             bool duiBool = Convert.ToBoolean(duiString);
             int ticketsInt = Convert.ToInt32(ticketsString);
             bool insuraceApproval = (ageInt > 15 && duiBool != true && ticketsInt < 3);
+            Console.WriteLine("Are you qualified?");
+            Thread.Sleep(3000);
             Console.WriteLine(insuraceApproval); 
 
             Console.ReadLine(); 
