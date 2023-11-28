@@ -12,28 +12,28 @@ namespace ASSIGNMENT_Boolean_while_doWhile
         {
             ////must be an exact number
             //Console.WriteLine("Let's see if it's freezing!\nWhat's the temperature where you are in centigrade?");
-            //int currentTemp = Convert.ToInt32(Console.ReadLine());
-            //bool isFreezing = currentTemp <= 0;
+            int currentTemp = Convert.ToInt32(Console.ReadLine());
+            bool isFreezing = currentTemp <= 0;
 
-            //do
-            //{
-            //    switch (currentTemp)
-            //    {     
-            //        case -1:
-            //            Console.WriteLine("It's freezing out!");
-            //            isFreezing = true;
-            //            break;
+            do
+            {
+                switch (currentTemp)
+                {     
+                    case -1:
+                        Console.WriteLine("It's freezing out!");
+                        isFreezing = true;
+                        break;
 
-            //        default:
-            //            Console.WriteLine("Not freezing");
-            //            Console.WriteLine("what is the temp?");
-            //            currentTemp = Convert.ToInt32(Console.ReadLine());
-            //            break;
+                    default:
+                        Console.WriteLine("Not freezing");
+                        Console.WriteLine("what is the temp?");
+                        currentTemp = Convert.ToInt32(Console.ReadLine());
+                        break;
 
-            //    }
-            //}
-            //while (!isFreezing);                
-            //Console.Read(); 
+                }
+            }
+            while (!isFreezing);                
+            Console.Read(); 
 
         //Ths is for anything 0 or below
         Console.WriteLine("Let's see if it's freezing!\nWhat's the temperature where you are in centigrade?");
