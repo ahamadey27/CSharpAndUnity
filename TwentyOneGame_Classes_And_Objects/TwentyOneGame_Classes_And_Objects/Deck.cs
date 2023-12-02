@@ -8,11 +8,10 @@ namespace TwentyOneGame_Classes_And_Objects
 {
     class Deck
     {
-        public Deck() //constructors go on top of the class above the properties 
+        public Deck() 
         {
           
-            Cards = new List<Card>(); //Must create empty list first 
-            //nested foreach loop
+            Cards = new List<Card>(); 
             List<string> Suits = new List<string>() { "Clubs", "Hearts", "Diamonds", "Spades" };
             List<string> Faces = new List<string>()
             {
@@ -24,7 +23,7 @@ namespace TwentyOneGame_Classes_And_Objects
             {
                 foreach (string suit in Suits)
                 {
-                    Card card = new Card(); //this gets added to the Cards variable up top
+                    Card card = new Card(); 
                     card.Suit = suit;
                     card.Face = face;
                     Cards.Add(card); 
