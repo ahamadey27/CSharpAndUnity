@@ -8,9 +8,14 @@ namespace TwentyOneGame_Classes_And_Objects
 {
     public class TwentyOneGame : Game 
     {
-        public void Play()
+        public override void Play() //must oput override method to activate since Game is abstract 
         {
 
+        }
+
+        public override void ListPlayers()
+        {
+            base.ListPlayers();
         }
     }
 }
