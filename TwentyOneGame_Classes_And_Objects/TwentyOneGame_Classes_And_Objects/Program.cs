@@ -10,6 +10,10 @@ namespace TwentyOneGame_Classes_And_Objects
     {
         static void Main(string[] args)
         {
+            List<Game> games = new List<Game>();
+            Game game = new TwentyOneGame(); //example of polymorphism...ability of a class to morph into its inheriting class to give certain advantages
+            games.Add(game); 
+
             Deck deck = new Deck();
             deck.Shuffle(3);
 
