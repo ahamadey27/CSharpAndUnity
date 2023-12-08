@@ -8,5 +8,6 @@ namespace TwentyOneGame_Classes_And_Objects
 {
     interface IWaslkAway
     {
+        void WalkAway(Player player); 
     }
 }
