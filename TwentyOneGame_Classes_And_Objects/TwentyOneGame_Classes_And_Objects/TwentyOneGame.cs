@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace TwentyOneGame_Classes_And_Objects
 {
-    class TwentyOneGame
+    public class TwentyOneGame : Game 
     {
+        public void Play()
+        {
+
+        }
     }
 }
