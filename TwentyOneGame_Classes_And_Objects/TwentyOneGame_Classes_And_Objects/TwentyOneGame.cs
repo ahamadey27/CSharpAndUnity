@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TwentyOneGame_Classes_And_Objects
 {
-    public class TwentyOneGame : Game 
+    public class TwentyOneGame : Game , IWaslkAway
     {
         public override void Play() //must oput override method to activate since Game is abstract 
         {
@@ -16,6 +16,11 @@ namespace TwentyOneGame_Classes_And_Objects
         public override void ListPlayers()
         {
             base.ListPlayers();
+        }
+
+        public void WalkAway(Player player)
+        {
+            throw new NotImplementedException(); 
         }
     }
 }
