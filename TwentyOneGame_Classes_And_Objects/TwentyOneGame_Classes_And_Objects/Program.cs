@@ -10,7 +10,12 @@ namespace TwentyOneGame_Classes_And_Objects
     {
         static void Main(string[] args)
         {
-            Player<Card> player = new Player<Card>(); 
+            Game game = new TwentyOneGame();
+            game.Players = new List<Player>(); 
+            Player player = new Player();
+            player.Name = "hammer";
+            game += player;
+            game -= player;
             Deck deck = new Deck();
             deck.Shuffle(3);
 
