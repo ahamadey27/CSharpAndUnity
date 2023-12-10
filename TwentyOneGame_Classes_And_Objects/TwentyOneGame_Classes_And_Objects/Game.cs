@@ -8,7 +8,7 @@ namespace TwentyOneGame_Classes_And_Objects
 {
     public abstract class Game
     {
-        public List<string> Players { get; set; }
+        public List<Player> Players { get; set; }
         public string Name { get; set; }
         public string Dealer { get; set; }
 
@@ -16,7 +16,7 @@ namespace TwentyOneGame_Classes_And_Objects
 
         public virtual void ListPlayers() //virtual method in abstract class means this method get inherited by inherting class but has abilty to override
         {
-            foreach (string player in Players)
+            foreach (Player player in Players)
             {
                 Console.WriteLine(player); 
             }
