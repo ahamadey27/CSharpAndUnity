@@ -8,9 +8,35 @@ namespace TwentyOneGame_Classes_And_Objects
 {
     public class Card
     {
-        public string Suit { get; set; }
-        public string Face { get; set; }
+        public Suit Suit { get; set; }
+        public Face Face { get; set; }
     }
+
+    public enum Suit //creating an enum...below values by default start at 0 and increase by one
+    {
+        Clubs, 
+        Diamonds,
+        Hearts,
+        Spades
+    }
+
+    public enum Face
+    {
+        Two,
+        Three,
+        Four,
+        Fve, 
+        Six,
+        Seven,
+        Eight,
+        Nine,
+        Ten,
+        Jack,
+        Queen,
+        King,
+        Ace
+    }
+
 
 
 }
