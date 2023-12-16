@@ -12,7 +12,7 @@ namespace TwentyOneGame_Classes_And_Objects
         public Face Face { get; set; }
     }
 
-    public enum Suit //creating an enum...below values by default start at 0 and increase by one
+    public enum Suit
     {
         Clubs, 
         Diamonds,

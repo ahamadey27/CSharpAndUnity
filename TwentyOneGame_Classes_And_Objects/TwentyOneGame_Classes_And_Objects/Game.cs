@@ -12,9 +12,9 @@ namespace TwentyOneGame_Classes_And_Objects
         public string Name { get; set; }
         public string Dealer { get; set; }
 
-        public abstract void Play(); //any class that's inheriting this class must inherit it's properties 
+        public abstract void Play();
 
-        public virtual void ListPlayers() //virtual method in abstract class means this method get inherited by inherting class but has abilty to override
+        public virtual void ListPlayers() 
         {
             foreach (Player player in Players)
             {

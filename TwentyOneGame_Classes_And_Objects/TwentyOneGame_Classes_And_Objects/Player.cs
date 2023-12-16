@@ -8,6 +8,12 @@ namespace TwentyOneGame_Classes_And_Objects
 {
     public class Player
     {
+        public Player(string name, int beginningBalace) //simple constructor
+        {
+            Hand = new List<Card>();
+            Balance = beginningBalace;
+            Name = name; 
+        }
         public List<Card> Hand { get; set; }
         public int Balance { get; set; }
         public string Name { get; set; }
