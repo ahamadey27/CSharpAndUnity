@@ -10,7 +10,7 @@ namespace TwentyOneGame_Classes_And_Objects
     {
         public List<Card> Hand { get; set; }
         public bool Stay { get; set; }
-        public bool isBusted { get; set }
+        public bool IsBusted { get; set; } 
 
     }
 }
