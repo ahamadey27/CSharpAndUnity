@@ -51,7 +51,7 @@ namespace TwentyOneGame_Classes_And_Objects
             else return false; 
         }
 
-        public static bool isBusted(List<Card> Hand)
+        public static bool IsBusted(List<Card> Hand)
         {
             int value = GetAllPossibleHandValues(Hand).Min();
             if (value > 21) return true;
@@ -83,15 +83,7 @@ namespace TwentyOneGame_Classes_And_Objects
             if (playerScore > dealerScore) return true;
             if (playerScore < dealerScore) return false;
             else return null; 
-        }
-
-
-         
-
-
-
-
-        }
+        }                
        
     }
 }

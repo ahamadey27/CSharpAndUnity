@@ -20,6 +20,7 @@ namespace TwentyOneGame_Classes_And_Objects
             Dealer.Hand = new List<Card>();
             Dealer.Stay = false;
             Dealer.Deck = new Deck();
+            Dealer.Deck.Shuffle(); 
             Console.WriteLine("Place your bet!"); 
 
             foreach (Player player in Players)
@@ -63,6 +64,7 @@ namespace TwentyOneGame_Classes_And_Objects
                         {
                             Dealer.Balance += entry.Value; 
                         }
+                        return;
                     }
                 }
             }
@@ -86,7 +88,7 @@ namespace TwentyOneGame_Classes_And_Objects
                     {
                         Dealer.Deal(player.Hand); 
                     }
-                    bool busted = TwentyOneRules.isBusted(player.Hand);
+                    bool busted = TwentyOneRules.IsBusted(player.Hand);
                     if (busted)
                     {
                         Dealer.Balance += Bets[player];
@@ -95,23 +97,23 @@ namespace TwentyOneGame_Classes_And_Objects
                         answer = Console.ReadLine().ToLower();
                         if (answer == "yes" || answer =="yea" || answer =="sure" || answer == "sure")
                         {
-                            player.isActivelyPlaying = true;
+                            player.IsActivelyPlaying = true;
                         }
                         else
                         {
-                            player.isActivelyPlaying = false;
+                            player.IsActivelyPlaying = false;
                         }
                     }
 
                 }
             }
-            Dealer.IsBusted = TwentyOneRules.isBusted(Dealer.Hand);
+            Dealer.IsBusted = TwentyOneRules.IsBusted(Dealer.Hand);
             Dealer.Stay = TwentyOneRules.ShouldDealerStay(Dealer.Hand); 
             while (!Dealer.Stay && !Dealer.IsBusted)
             {
                 Console.WriteLine("Dealer is hitting...");
                 Dealer.Deal(Dealer.Hand);
-                Dealer.IsBusted = TwentyOneRules.isBusted(Dealer.Hand);
+                Dealer.IsBusted = TwentyOneRules.IsBusted(Dealer.Hand);
                 Dealer.Stay = TwentyOneRules.ShouldDealerStay(Dealer.Hand);
             }
             if (Dealer.Stay)
@@ -132,7 +134,7 @@ namespace TwentyOneGame_Classes_And_Objects
 
             foreach (Player player in Players)
             {
-                bool? playerWon = TwentyOneRules.CompareHands(player.Hand, Dealer.Hand); //how to make a bool null
+                bool? playerWon = TwentyOneRules.CompareHands(player.Hand, Dealer.Hand); 
                 if (playerWon == null)
                 {
                     Console.WriteLine("Push! No one wins!");
@@ -154,11 +156,13 @@ namespace TwentyOneGame_Classes_And_Objects
                 string answer = Console.ReadLine().ToLower();
                 if (answer == "yes" || answer == "yea" || answer == "sure" || answer == "sure")
                 {
-                    player.isActivelyPlaying = true;
+                    player.IsActivelyPlaying = true;
+                    return;
                 }
                 else
                 {
-                    player.isActivelyPlaying = false; 
+                    player.IsActivelyPlaying = false;
+                    return;
                 }
             }
 

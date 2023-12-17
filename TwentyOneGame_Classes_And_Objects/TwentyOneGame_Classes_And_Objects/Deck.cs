@@ -18,10 +18,8 @@ namespace TwentyOneGame_Classes_And_Objects
             {
                for (int j = 0; j < 4; j++)
                 {
-                    Card card = new Card();
-                    card.Face = (Face)i; //casting to Face j
-                    card.Suit = (Suit)j;
-                    Cards.Add(card); 
+                    Cards.Add(new Card { Face = (Face)i, Suit = (Suit)j });
+
                 }
             }
            
