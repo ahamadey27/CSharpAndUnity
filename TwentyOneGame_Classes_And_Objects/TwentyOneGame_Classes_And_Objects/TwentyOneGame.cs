@@ -32,6 +32,20 @@ namespace TwentyOneGame_Classes_And_Objects
                 }
                 Bets[player] = bet;              
             }
+            for (int i = 0; i < 2; i++)
+            {
+                Console.WriteLine("Dealing...");
+                foreach (Player player in Player)
+                {
+                    Console.WriteLine("{0}: ", player.Name);
+                    Dealer.Deal(player.Hand); 
+                    if (i== 1)
+                    {
+
+                    }
+                }
+
+            }
 
 
         }

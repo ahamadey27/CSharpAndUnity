@@ -25,7 +25,7 @@ namespace TwentyOneGame_Classes_And_Objects
         Two,
         Three,
         Four,
-        Fve, 
+        Five, 
         Six,
         Seven,
         Eight,
