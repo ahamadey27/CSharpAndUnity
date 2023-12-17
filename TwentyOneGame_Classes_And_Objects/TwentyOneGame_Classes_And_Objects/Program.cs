@@ -12,10 +12,13 @@ namespace TwentyOneGame_Classes_And_Objects
         {
             Console.WriteLine("Welcome to the Grand Hotel Casino. What's your name?");
             string playerName = Console.ReadLine();
+
             Console.WriteLine("How much money do you want to gamble away today?");
             int bank = Convert.ToInt32(Console.ReadLine());
+
             Console.WriteLine("Hello, {0}. Would you like to join a game of 21?", playerName); //playerName will be inserted into {0}
             string answer = Console.ReadLine().ToLower();
+           
             if (answer == "es" || answer == "yea" || answer == "ya" || answer == "ok" || answer == "yes" || answer == "sure")
             {
                 Player player = new Player(playerName, bank);
@@ -26,7 +29,11 @@ namespace TwentyOneGame_Classes_And_Objects
                 {
                     game.Play(); 
                 }
+                game -= player;
+                Console.WriteLine("Thank you for playing!"); 
             }
+            Console.WriteLine("Good bye");
+            Console.Read();  
 
            
         }

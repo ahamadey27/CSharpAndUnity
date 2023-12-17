@@ -8,8 +8,14 @@ namespace TwentyOneGame_Classes_And_Objects
 {
     public class TwentyOneGame : Game , IWaslkAway
     {
+        public TwentyOneDealer Dealer { get; set; }
         public override void Play() 
         {
+            Dealer = new TwentyOneDealer(); 
+            foreach (Player player in Players)
+            {
+                
+            }
 
         }
 

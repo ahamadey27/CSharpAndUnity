@@ -17,6 +17,7 @@ namespace TwentyOneGame_Classes_And_Objects
             Hand.Add(Deck.Cards.First()); 
             Console.WriteLine(Deck.Cards.First().ToString() + "\n");
             Deck.Cards.RemoveAt(0); 
+
         }
     }
 }
