@@ -10,11 +10,7 @@ namespace TwentyOneGame_Classes_And_Objects
     class Program
     {
         static void Main(string[] args)
-        {
-            string text = "Here is logging I/O text example";
-            File.WriteAllText(@"C:\\Users\\hamad\\Documents\\GitHub\\CSharpAndUnity\\Text_Logging_Examples\\log.txt", text); 
-
-
+        {                    
             Console.WriteLine("Welcome to the Grand Hotel Casino. What's your name?");
             string playerName = Console.ReadLine();
 
