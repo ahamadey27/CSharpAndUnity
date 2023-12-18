@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace TwentyOneGame_Classes_And_Objects
 {
@@ -10,6 +11,10 @@ namespace TwentyOneGame_Classes_And_Objects
     {
         static void Main(string[] args)
         {
+            string text = "Here is logging I/O text example";
+            File.WriteAllText(@"C:\\Users\\hamad\\Documents\\GitHub\\CSharpAndUnity\\Text_Logging_Examples\\log.txt", text); 
+
+
             Console.WriteLine("Welcome to the Grand Hotel Casino. What's your name?");
             string playerName = Console.ReadLine();
 
