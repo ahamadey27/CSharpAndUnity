@@ -10,7 +10,7 @@ namespace TwentyOneGame_Classes_And_Objects
     class Program
     {
         static void Main(string[] args)
-        {                    
+        {g                    
             Console.WriteLine("Welcome to the Grand Hotel Casino. What's your name?");
             string playerName = Console.ReadLine();
 
